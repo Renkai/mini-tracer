@@ -1,7 +1,7 @@
 fn main() {
     use rustracing::sampler::AllSampler;
-    use rustracing_jaeger::Tracer;
     use rustracing_jaeger::reporter::JaegerCompactReporter;
+    use rustracing_jaeger::Tracer;
 
     // Creates a tracer
     let (span_tx, span_rx) = crossbeam_channel::bounded(10);
@@ -9,7 +9,6 @@ fn main() {
     {
         let span = tracer.span("sample_op").start();
         // Do something
-
     } // The dropped span will be sent to `span_rx`
 
     let span = span_rx.try_recv().unwrap();
