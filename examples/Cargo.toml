@@ -13,3 +13,4 @@ rustracing_jaeger = "0.4.1"
 tracing = "0.1.13"
 crossbeam-channel = "0.4"
 tracing-rustracing = {path = "../tracing-rustracing", version = "0.1.0"}
+tracing-subscriber = {version = "0.2.4", features = ["json", "chrono"] }
