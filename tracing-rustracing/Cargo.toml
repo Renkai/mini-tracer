@@ -1,7 +1,6 @@
 [package]
-name = "examples"
-version = "0.0.0"
-publish = false
+name = "tracing-rustracing"
+version = "0.1.0"
 authors = ["Renkai <gaelookair@gmail.com>"]
 edition = "2018"
 
@@ -12,4 +11,3 @@ rustracing = "0.4.0"
 rustracing_jaeger = "0.4.1"
 tracing = "0.1.13"
 crossbeam-channel = "0.4"
-tracing-rustracing = {path = "../tracing-rustracing", version = "0.1.0"}
